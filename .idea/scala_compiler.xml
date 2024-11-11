@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ScalaCompilerConfiguration">
+    <profile name="Maven 1" modules="FinanceMarketingDistributed,chinaunicom_finance_marketing_distributed,chinaunicom_finance_marketing_distributed_adv_3.0,finance_marketing_distributed" />
+  </component>
+</project>
