@@ -16,14 +16,9 @@ object test {
     val spark = SparkSession.builder().getOrCreate()
 
     println("test starting --------")
-    val dataPath_w="C:\\Users\\Administrator\\IdeaProjects\\chinaunicom_finance_marketing_distributed\\data\\withcols.csv"
-    val dataPath_wo = "C:\\Users\\Administrator\\IdeaProjects\\chinaunicom_finance_marketing_distributed\\data\\feature.csv"
-    val colPath="C:\\Users\\Administrator\\IdeaProjects\\chinaunicom_finance_marketing_distributed\\data\\comma.txt"
-
-//      -feat1 "/tmp/limy/smallSample/sample300.csv" \
-//      -feat1col "/tmp/limy/smallSample/col300.csv" \
-//      -feat1 "/tmp/finance/finance_marketing_feature.csv" \
-//      -feat1col "/tmp/finance/finance_marketing_feature_cols.csv" \
+    val dataPath_w="XXX\\data\\withcols.csv"
+    val dataPath_wo = "XXX\\data\\feature.csv"
+    val colPath="XXX\\data\\comma.txt"
 
     //test withCols
     //println("Test withCols ------------------:")
