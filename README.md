@@ -1,2 +1,2 @@
 ## Framwork
-<img src="./financrModelSpark.jpg">
+<img src="./financeModelSpark.jpg">
