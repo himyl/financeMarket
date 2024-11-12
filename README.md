@@ -5,9 +5,9 @@ FinanceMarketingDistributed is Scala-based distributed financial marketing appli
 <img src="./financeModelSpark.jpg">
 
 ## Functions
-Distributed processing modules for financial marketing data
-Compatibility with mainstream distributed frameworks (such as Hadoop or Spark) for large-scale data analysis
-Multiple classes and methods tailored for specific business logic.
+- Distributed processing modules for financial marketing data
+- Compatibility with mainstream distributed frameworks (such as Hadoop or Spark) for large-scale data analysis
+- Multiple classes and methods tailored for specific business logic.
 
 ## License
 This project is licensed under the MIT License.
