@@ -15,7 +15,7 @@ ip_1=""
 hadoop fs -get ${hdfs_path} ${local_path}
 echo "get succeed"
 
-scp -r ${local_path} ubd_ana_test@${ip_1}:${target_path}
+scp -r ${local_path} XXX@${ip_1}:${target_path}
 echo "scp succeed"
 
 to_run="XXX/loadInTable.sql"
