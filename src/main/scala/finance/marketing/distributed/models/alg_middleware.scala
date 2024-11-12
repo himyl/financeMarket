@@ -252,7 +252,7 @@ object pipeline_generator {
 
 
     val paramMap = Map(
-      "tracker_conf" -> TrackerConf(0L, "python", "", "/opt/ubd/core/anaconda3/bin/python"))
+      "tracker_conf" -> TrackerConf(0L, "python", "", "/opt/XXX/core/anaconda3/bin/python"))
 
     val xgb = new XGBoostClassifier(paramMap)
       .setObjective("binary:logistic")
