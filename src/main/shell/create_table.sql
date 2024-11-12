@@ -1,6 +1,6 @@
                                                                                 --loan
-set mapreduce.job.queuename=xl_non_production;
-set mapred.job.name=udb-jsb-tx;
+set mapreduce.job.queuename=XXXX;
+set mapred.job.name=XXX;
 set hive.merge.mapredfiles=true;
 set hive.merge.smallfiles.avgsize=134217728;
 set hive.merge.size.per.task=536870912;
