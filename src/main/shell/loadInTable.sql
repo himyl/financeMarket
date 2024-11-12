@@ -15,4 +15,4 @@ set hive.resultset.use.unique.column.names=false;
 
 --load table
 load data local inpath '${hivevar:data_path}'
-into table ubd_ana_test_2.dwa_d_finance_cust_marketing_${hivevar:product}_${hivevar:scene} partition(date_id=${hivevar:proc_date});
+into table XXX.XXX_${hivevar:product}_${hivevar:scene} partition(date_id=${hivevar:proc_date});
