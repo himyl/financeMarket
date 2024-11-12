@@ -4,7 +4,7 @@ project_path=$(dirname $(dirname $(dirname $( cd $( dirname ${BASH_SOURCE[0]} ) 
 proc_date=$(date +%Y%m%d -d " ")
 run_time=$(date "+%H%M")
 scene="connect"
-pj_name="guangfa_sy_feedback"
+pj_name="XXXXXXX"
 
 to_run=${project_path}target/finance_marketing_distributed-1.0-SNAPSHOT-jar-with-dependencies.jar
 spark-submit --master yarn \
@@ -22,15 +22,15 @@ spark-submit --master yarn \
 	           --conf spark.executor.extraJavaOptions="-Xss30M -XX:+PrintGC -XX:+PrintGCApplicationStoppedTime -XX:+PrintGCDetails -XX:+PrintGCDateStamps -XX:MetaspaceSize=128M -Dlog4j.configuration=log4j.properties" \
              --files log4j.properties \
              ${to_run}  \
-             -feat1 "/tmp/finance/${pj_name}/finance_marketing_feature.csv" \
-             -feat1col "/tmp/finance/finance_marketing_feature_cols.csv" \
-             -feat2 "/tmp/finance/${pj_name}/finance_marketing_feature_recent_visit.csv" \
-             -feat2col "/tmp/finance/finance_marketing_feature_recent_visit_cols.csv" \
-             -labelPath "/tmp/finance/${pj_name}/connect_will_label.csv" \
-             -labelColPath "/tmp/finance/labelCol.csv" \
+             -feat1 "XXX/${pj_name}/finance_marketing_feature.csv" \
+             -feat1col "XXX/finance_marketing_feature_cols.csv" \
+             -feat2 "XXX/${pj_name}/finance_marketing_feature_recent_visit.csv" \
+             -feat2col "XXX/finance_marketing_feature_recent_visit_cols.csv" \
+             -labelPath "XXX/${pj_name}/connect_will_label.csv" \
+             -labelColPath "XXX/labelCol.csv" \
              -selectedFeat "" \
-             -modelPath "/tmp/finance/${pj_name}/${scene}_${proc_date}" \
+             -modelPath "XXX/${pj_name}/${scene}_${proc_date}" \
              -procType "train" \
              -algVersion "alg_2C_V1" \
              -scene ${scene} \
-             -predictionPath "/tmp/finance/feedback/prediction_${scene}_${proc_date}"
+             -predictionPath "XXX/prediction_${scene}_${proc_date}"
