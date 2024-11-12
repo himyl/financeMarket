@@ -34,8 +34,8 @@ spark-submit --master yarn \
              -labelPath "XXX/connect_will_label.csv" \
              -labelColPath "XXX/labelCol.csv" \
              -selectedFeat "" \
-             -modelPath "/tmp/finance/feedback/${scene}_${proc_date}" \
+             -modelPath "XXX/${scene}_${proc_date}" \
              -procType "train" \
              -algVersion "alg_2C_V2" \
              -scene ${scene} \
-             -predictionPath "/tmp/finance/feedback/prediction_${scene}_${proc_date}"
+             -predictionPath "XXX/prediction_${scene}_${proc_date}"
