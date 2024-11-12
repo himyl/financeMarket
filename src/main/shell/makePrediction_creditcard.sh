@@ -22,12 +22,12 @@ spark-submit --master yarn \
              --files log4j.properties \
              --class finance.marketing.distributed.proc \
              ${to_run}  \
-             -feat1 "/tmp/finance/all_user/${proc_date}/finance_marketing_feature.csv" \
-             -feat1col "/tmp/finance/finance_marketing_feature_cols.csv" \
-             -feat2 "/tmp/finance/all_user/${proc_date}/finance_marketing_feature_recent_visit.csv" \
-             -feat2col "/tmp/finance/finance_marketing_feature_recent_visit_cols.csv" \
+             -feat1 "XXX/${proc_date}/finance_marketing_feature.csv" \
+             -feat1col "XXX/finance_marketing_feature_cols.csv" \
+             -feat2 "XXX/${proc_date}/finance_marketing_feature_recent_visit.csv" \
+             -feat2col "XXX/finance_marketing_feature_recent_visit_cols.csv" \
              -selectedFeat "" \
-             -modelPath "/tmp/finance/guangfa_sy_feedback/${scene}_20220513" \
+             -modelPath "XXX/${scene}_XXX" \
              -procType "predict" \
              -algVersion "alg_2C_V1" \
              -scene ${scene} \
@@ -51,15 +51,15 @@ spark-submit --master yarn \
              --files log4j.properties \
              --class finance.marketing.distributed.proc \
              ${to_run}  \
-             -feat1 "/tmp/finance/all_user/${proc_date}/finance_marketing_feature.csv" \
-             -feat1col "/tmp/finance/finance_marketing_feature_cols.csv" \
-             -feat2 "/tmp/finance/all_user/${proc_date}/finance_marketing_feature_recent_visit.csv" \
+             -feat1 "XXX/${proc_date}/finance_marketing_feature.csv" \
+             -feat1col "XXX/finance_marketing_feature_cols.csv" \
+             -feat2 "XXX/${proc_date}/finance_marketing_feature_recent_visit.csv" \
              -feat2col "/tmp/finance/finance_marketing_feature_recent_visit_cols.csv" \
              -selectedFeat "" \
-             -modelPath "/tmp/finance/guangfa_sy_feedback/${scene}_20220515" \
+             -modelPath "/XXX/${scene}_XXX" \
              -procType "predict" \
              -algVersion "alg_2C_V1" \
              -scene ${scene} \
-             -predictionPath "/tmp/finance/all_user/${product}_${scene}_${proc_date}"
+             -predictionPath "XXX/${product}_${scene}_${proc_date}"
 
 echo "creditcard connect inference succeed"
