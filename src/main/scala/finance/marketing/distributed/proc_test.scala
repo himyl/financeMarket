@@ -15,10 +15,6 @@ object proc_test {
     //val spark = SparkSession.builder().getOrCreate()
 
     println("test starting --------")
-    /*val dataPath_w="C:\\Users\\Administrator\\IdeaProjects\\chinaunicom_finance_marketing_distributed\\data\\withcols.csv"
-    val dataPath_wo = "C:\\Users\\Administrator\\IdeaProjects\\chinaunicom_finance_marketing_distributed\\data\\feature.csv"
-    val colPath="C:\\Users\\Administrator\\IdeaProjects\\chinaunicom_finance_marketing_distributed\\data\\comma.txt"
-*/
 
     val dataPath_w = args(0)
     val dataPath_wo = args(1)
