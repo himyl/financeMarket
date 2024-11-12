@@ -31,7 +31,7 @@ spark-submit --master yarn \
              -procType "predict" \
              -algVersion "alg_2C_V1" \
              -scene ${scene} \
-             -predictionPath "/tmp/finance/all_user/${product}_${scene}_${proc_date}"
+             -predictionPath "XXX/${product}_${scene}_${proc_date}"
 echo "creditcard will inference succeed"
 
 scene="connect"
@@ -54,7 +54,7 @@ spark-submit --master yarn \
              -feat1 "XXX/${proc_date}/finance_marketing_feature.csv" \
              -feat1col "XXX/finance_marketing_feature_cols.csv" \
              -feat2 "XXX/${proc_date}/finance_marketing_feature_recent_visit.csv" \
-             -feat2col "/tmp/finance/finance_marketing_feature_recent_visit_cols.csv" \
+             -feat2col "XXX/finance_marketing_feature_recent_visit_cols.csv" \
              -selectedFeat "" \
              -modelPath "/XXX/${scene}_XXX" \
              -procType "predict" \
