@@ -27,12 +27,12 @@ spark-submit --master yarn \
              --files log4j.properties \
              --class finance.marketing.distributed.proc \
              ${to_run}  \
-             -feat1 "/tmp/finance/finance_marketing_feature.csv" \
-             -feat1col "/tmp/finance/finance_marketing_feature_cols.csv" \
-             -feat2 "/tmp/finance/finance_marketing_feature_recent_visit.csv" \
-             -feat2col "/tmp/finance/finance_marketing_feature_recent_visit_cols.csv" \
-             -labelPath "/tmp/finance/connect_will_label.csv" \
-             -labelColPath "/tmp/finance/labelCol.csv" \
+             -feat1 "XXX/finance_marketing_feature.csv" \
+             -feat1col "XXX/finance_marketing_feature_cols.csv" \
+             -feat2 "XXX/finance_marketing_feature_recent_visit.csv" \
+             -feat2col "XXX/finance_marketing_feature_recent_visit_cols.csv" \
+             -labelPath "XXX/connect_will_label.csv" \
+             -labelColPath "XXX/labelCol.csv" \
              -selectedFeat "" \
              -modelPath "/tmp/finance/feedback/${scene}_${proc_date}" \
              -procType "train" \
